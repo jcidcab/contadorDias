@@ -1,0 +1,159 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general del body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal */
+  #app {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo del formulario */
+  .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #eventName, #eventDate, #bAdd {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  #eventName, #eventDate {
+    width: 100%;
+  }
+  
+  #bAdd {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #bAdd:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo de las tareas (eventos) */
+  #tasksContainer {
+    margin-top: 20px;
+  }
+  
+  .task {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .task:hover {
+    transform: scale(1.03);
+  }
+  
+  .days {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff9800;
+  }
+  
+  .days-number {
+    font-size: 1.4rem;
+  }
+  
+  .event-name {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #00796b;
+  }
+  
+  .event-date {
+    font-size: 1rem;
+    color: #757575;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .bDelete {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bDelete:hover {
+    background-color: #e53935;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 600px) {
+    #app {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .form form {
+      gap: 10px;
+    }
+  
+    #eventName, #eventDate, #bAdd {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .task {
+      padding: 12px;
+    }
+  
+    .days {
+      font-size: 1rem;
+    }
+  
+    .event-name {
+      font-size: 1rem;
+    }
+  
+    .event-date {
+      font-size: 0.9rem;
+    }
+  
+    .bDelete {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
